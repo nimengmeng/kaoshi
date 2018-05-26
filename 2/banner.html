@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/banner.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="item active"><img src="http://bfs.biyao.com/group1/M00/38/4C/rBACYVr1Wb2AMtrVAADFzn82UQ0803.jpg" alt=""></div>
+                <div class="item"><img src="http://bfs.biyao.com/group1/M00/38/54/rBACW1r1WeCATJ5OAADtObAxip0351.jpg" alt=""></div>
+                <div class="item"><img src="http://bfs.biyao.com/group1/M00/36/E3/rBACVFr4-oaAYfxoAAD288nsQj0517.jpg" alt=""></div>
+                <div class="item"><img src="http://bfs.biyao.com/group1/M00/36/9F/rBACVFr1WmOAGVRjAAE5xrhM6K4833.jpg" alt=""></div>
+                <div class="item"><img src="http://bfs.biyao.com/group1/M00/36/9E/rBACVFr1WgyAduvyAAFPiJaBfHg761.jpg" alt=""></div>
+                <div class="item"><img src="http://bfs.biyao.com/group1/M00/36/9F/rBACVFr1WpGAG_KeAAGdHT4Xcoo163.jpg" alt=""></div>
+        </div>
+        <!--轮播图 分页按钮-->
+        <div class="pagination"></div>
+        <!--轮播图 前后按钮-->
+        <div class="prev"></div>
+        <div class="next"></div>
+    </div>
+</body>
+<script src="libs/jquery-3.3.1.js"></script>
+<script src="libs/jquery.banner.js"></script>
+<script>
+    $(function(){
+        $(".container")
+        .gpBanner(".wrapper",{
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            pagination:{
+                el:".pagination"
+            },
+            direction:"scroll",
+            loop:true
+        }) 
+    })
+</script>
+</html>

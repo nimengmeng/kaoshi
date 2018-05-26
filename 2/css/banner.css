@@ -1,0 +1,75 @@
+/* 轮播图 */
+.container{
+    width: 1080px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.wrapper{
+    width: 1080px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+.item{
+    width: 1080px;
+    height: 360px;
+    position : absolute;
+    text-align: center;
+    line-height: 360px;
+}
+.item img{
+    width:1080px;
+    height: 360px;
+}
+.item.active{
+    z-index: 2;
+}
+.pagination{
+    width: 880px;
+    height:20px;
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    left:200px;
+    text-align: center;
+}
+
+.pagination span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #523669;
+    margin: 0 6px;
+}
+.pagination span.active{
+    background: #f7b200;
+    border:2px solid #f7b200;
+}
+.pagination span:first-child{
+    margin-left: 0; 
+}
+
+.prev,.next{
+    height: 48px;
+    width: 48px;
+    background:red;
+    position: absolute;
+    z-index: 999;
+    margin-top: -24px;
+    top: 50%;
+    border-radius: 2px;
+    background: url(http://static2.biyao.com/pc/common/img/master/slider-left.png?v=biyao_0218904) no-repeat;
+    cursor: pointer;
+}
+
+.prev{
+    left: 20px;
+   
+}
+.next{
+    right: 20px;
+    background: url(http://static3.biyao.com/pc/common/img/master/slider-right.png?v=biyao_f339009) no-repeat;
+}
